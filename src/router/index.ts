@@ -3,9 +3,17 @@ import Header from '../components/Header.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/a',
     name: 'Home',
     component: Header
+  },
+  {
+    path: '/',
+    name: 'Home',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
   },
   {
     path: '/about',
