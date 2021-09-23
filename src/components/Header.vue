@@ -86,7 +86,7 @@ export default defineComponent({
     display: flex;
     width: 100%;
     justify-content: center;
-    position: fixed;
+    // position: fixed;
   
 
 }
@@ -112,9 +112,9 @@ export default defineComponent({
     @include disp-type(flex, row , space-evenly);
     padding-top: 10px;
     width: 40%;
-    font-family: sans-serif;
+    font-family: Candara;
     color: #fff;
-    font-weight: 300;
+    font-weight: 500;
             a, a > span {
                 position: relative;
                 color: inherit;
@@ -165,7 +165,7 @@ export default defineComponent({
 
 .navbar div {
   height: 3px !important;
-  background: black;
+  background:#fff;
   margin: 2px 0px 2px 0px;
   border-radius: 25px;
   transition: all 0.5s;
@@ -207,7 +207,7 @@ export default defineComponent({
     }
     div {
   height: 3px !important;
-  background: black;
+  background:#fff;
   margin: 2px 0px 2px 0px;
   border-radius: 25px;
   transition: all 0.5s;

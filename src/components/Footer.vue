@@ -4,7 +4,7 @@
             <img class="footer-logo"  src="../../images/footer-icon.png" alt="logo">
             <div class="fotter-logo-text">
                 <p>GET IN TOUCH</p>
-                (480) 624-5200
+                (480) 624-5200<br>
                 <a href="mailto:mail@discoverylandoco.com">mail@discoverylandoco.com</a>
             </div>
 
@@ -94,7 +94,7 @@ export default defineComponent({
     position: absolute;
     z-index: -999;
     color:#fff;
-    background-color: #001F19;
+    background-color: #121a18;
 }
 .footer-logo{
     // @include disp-type(flex, row , space-evenly);
