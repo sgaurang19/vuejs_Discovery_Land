@@ -1,4 +1,13 @@
 # discoveryland
+Branches
+1. Master :- Discovery land co project
+
+2. Header :- Header part of project
+
+3. Gallery :- Gallery section
+
+4. our_world :- Our World section
+
 
 ## Project setup
 ```

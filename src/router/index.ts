@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/HomePage/Home.vue')
   },
   {
     path: '/about',
@@ -29,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "gallery" */ '../views/Gallery.vue')
+    component: () => import(/* webpackChunkName: "gallery" */ '../views/Gallery/Gallery.vue')
   },
   {
     path: '/our_world',
@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "our_world" */ '../views/our_world.vue')
+    component: () => import(/* webpackChunkName: "our_world" */ '../views/our_world/our_world.vue')
   }
 ]
 
