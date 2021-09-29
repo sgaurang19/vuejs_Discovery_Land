@@ -33,6 +33,4 @@
 </template>
 
 <script type="module" src="./oue_world.ts">
-// import 'src/components/views/our_world/oue_world.ts'; // @ is an alias to /src
-
 </script>

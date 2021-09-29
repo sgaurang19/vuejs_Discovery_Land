@@ -2,7 +2,7 @@
     <div class="main-header">
         <div align="center" class="header-container">
             <img class="header-logo" src="../../../images/logo-discoveryland.png" alt="logo">
-            <div class="header-nav">
+            <div class="header-nav" id="Nav">
                 <div v-for="link in links" :key="link.id" >
                 <!-- <div class="header-nav"> -->
                     
@@ -15,19 +15,22 @@
                     <router-link to="/about">Press</router-link> -->
 
                 </div>
+                  
+            </div>
+              <button class="nav-toggler" @click="isToggled = !isToggled">
+                        <svg width="16" height="16" fill="#fff" class="toggler-svg">
+                            <rect width="16" height="4" x="0" y="0" />
+                            <rect width="16" height="4" x="0" y="6" />
+                            <rect width="12" height="4" x="0" y="12" />
+                        </svg>
+              </button>
+            <!-- <div class="hidden-nav">
                 <a href="#" class="navbar">
                     <div class="one"></div>
                     <div class="two"></div>
                     <div class="three"></div>
                 </a>
-            </div>
-            <div class="hidden-nav">
-                <a href="#" class="navbar">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                </a>
-            </div>
+            </div> -->
             <router-view/>
                 
         
@@ -73,7 +76,17 @@ export default defineComponent({
                 },
             ]
         }
-    }
+    },
+    // methods:{
+    //         Navbar():void{
+    //             let x = < HTMLInputElement > document.getElementById("Nav");
+    //                 if (x.className === "header-nav") {
+    //                     x.className += 'responsive';
+    //                 } else {
+    //                     x.className = "header-nav";
+    //                 }
+    //             } 
+    //     }
 });
 </script>
 
