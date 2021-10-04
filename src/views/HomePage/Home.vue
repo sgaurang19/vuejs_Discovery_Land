@@ -9,6 +9,8 @@
             </div>
           
             </div>
+    <!-- <VideoHeader v-bind:headerData="homeHeaderData" /> -->
+
         <div class="part2-main">
               <div class="part2">
                 <div class="left">

@@ -2,18 +2,23 @@ import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue'; // @ is an alias to /src
 import Footer from '@/components/Footer/Footer.vue'; // @ is an alias to /src
 import Carousel from '@/components/carousel/carousel.vue'; // @ is an alias to /src
-
+import VideoHeader from '@/components/HeaderVideo/Headervideo.vue';
 
 
 
 import './Home.scss'
 @Options({
   components: {
-    Header, Footer, Carousel
+    Header, Footer, Carousel, VideoHeader
   },
 })
 
 export default class Home extends Vue {
+  readonly homeHeaderData = {
+    header : 'Discover',
+    subHeader: 'Your world',
+    calledBy: 'Home'
+  }
   public geo  = [
     {
         "id" : 0,

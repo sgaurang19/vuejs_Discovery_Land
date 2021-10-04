@@ -51,7 +51,7 @@ export default defineComponent({
                 // },
                 {
                     id:2,
-                    url: "/about",
+                    url: "/about-dlc",
                     urlName:"About DLC",
                 },
                 {
